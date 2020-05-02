@@ -1,0 +1,25 @@
+import random 
+
+def guess(): 
+  if numb < y:
+    print ('number was too big')
+  else:
+    print ('number was too small')
+
+numb = random.randint(0, 5)
+x = input('guess a number between 0- 5 --')
+y = int(x)
+
+while y != numb:
+  guess()
+  print('sorry my guess was ' + str(numb))
+  number = input('guess again - ')
+  y = int(number)
+  numb = random.randint(0, 5)
+  
+else:
+  print('congrats your answer was correct !')
+
+# i made it creat another random number each loop but 20 numb were too much so i reduced it to 5
+
+#fun game will do again
